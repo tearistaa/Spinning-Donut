@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPINNING DONUT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">SPINNING DONUT</h1>
+      <p class="subtitle">Render a donut in your terminal</p>
+    </header>
+
+    <!-- Canvas Renderer -->
+    <main class="canvas-wrapper">
+      <canvas id="donutCanvas"></canvas>
+    </main>
+
+    <!-- Interactive Control Panel -->
+    <div class="controls-panel">
+      <!-- Character Set Selector -->
+      <div class="control-group">
+        <label for="charMode">Character Set</label>
+        <select id="charMode">
+          <option value="digits">Digits (0 - 9)</option>
+          <option value="binary" selected>Binary (0 & 1)</option>
+          <option value="hex">Hexadecimal (0-9, A-F)</option>
+          <option value="math">Math Symbols (0-9, + - * / = %)</option>
+        </select>
+      </div>
+
+      <!-- Color Theme Selector -->
+      <div class="control-group">
+        <label for="colorTheme">Color Theme</label>
+        <select id="colorTheme">
+          <option value="green" selected>Matrix Green</option>
+          <option value="cyberpunk">Cyberpunk Pink/Cyan</option>
+          <option value="amber">Amber Gold</option>
+          <option value="ice">Ice Blue</option>
+        </select>
+      </div>
+
+      <!-- Rotation Speed Slider -->
+      <div class="control-group">
+        <label for="rotSpeed">Rotation Speed: <span id="speedVal">1.0x</span></label>
+        <input type="range" id="rotSpeed" min="0" max="3" step="0.1" value="1">
+      </div>
+
+      <!-- Matrix Density Slider -->
+      <div class="control-group">
+        <label for="density">Density: <span id="densityVal">Medium</span></label>
+        <input type="range" id="density" min="1" max="3" step="1" value="2">
+      </div>
+
+      <!-- Auto Rotate Toggle & Reset Button -->
+      <div class="control-group checkbox-group">
+        <label for="autoRotate">
+          <input type="checkbox" id="autoRotate" checked>
+          Auto Rotate
+        </label>
+        <button id="resetViewBtn" class="reset-btn">Reset View</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
