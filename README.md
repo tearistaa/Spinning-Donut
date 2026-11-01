@@ -1,6 +1,12 @@
-# 3D Matrix Number Donut 🍩
+# 3D Donut 🍩
 
 An interactive 3D torus projection engine built from scratch using pure mathematics, HTML5 Canvas, and modern vanilla JavaScript, styled with CSS3. Inspired by the famous C code spinning donut, this web application brings the 3D projection math to the browser with dynamic character sets, color themes, and orbit controls.
+
+---
+
+# Preview 🍩
+
+![Demo Video](./Assets/Demo.gif)
 
 ---
 
